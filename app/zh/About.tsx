@@ -28,42 +28,37 @@ const About = () => {
           <div className='md:w-1/2 mb-10'>
             <div>
               <h1 className='text-center text-4xl font-bold mb-16 md:text-left'>
-                About Me
+                關於我
               </h1>
               <p>
                 {' '}
-                Hi, my name is Josh and I am your{' '}
+                嗨，我是Josh!很高興認識你。我是一個前端工程師。{' '}
                 <span className='font-bold'>go-to </span>
-                developer for web development. I love crafting engaging and
-                useful web solutions from
-                <span className='font-bold'> frontend </span>
-                to
-                <span className='font-bold'> backend</span>
+                我喜歡使用不同的前端語言和框架打造Web應用和簡單的服務，注重使用者設計與體驗，目前我最常使用的框架是
+                <span className='font-bold'> NextJS </span>和
+                <span className='font-bold'> React </span>
               </p>
               <br />
-              <p>I have became frontend developer</p>
+              <p>目前我嘗試製作更多的專案，並且努力熟悉Tailwind CSS</p>
               <br />
               <p>
-                Besides, I have 10 years of B2B software solution sales
-                experience which helps me in defining user requirements,
-                communication in-and-out, and user experience. All of my
-                previous experience helps me grab development skill and become a
-                better developer.
+                在成為工程師之前，我擁有近十年的B2B軟體解決方案商務經驗，以銷售的身分服務跨國企業、知名新創、以及小型外商和本土商。
+                我熟悉不同的SaaS產品服務與客製化專案，能夠快速協助客戶定義需求和內部溝通，深知使用者介面與體驗的重要性。
+                這些經驗幫助了我在自學軟體開發的時候有著良好的方向，以及成為一個工程師的信心
               </p>
               <br />
               <p>
-                I believe I will never stop growing as a professional developer{' '}
+                我相信自己在軟體開發的路上能夠不停成長，成為{' '}
                 <span className='font-bold text-teal-500'>
-                  professional developer{' '}
+                  專業的軟體開發者{' '}
                 </span>
-                and that is what I strive to do. Please check my project and I
-                am excited to see where my career takes me soon.
+                。歡迎查看我的專案作品並連繫交流指教。謝謝。
               </p>
             </div>
           </div>
           <div className='md:w-1/2'>
             <h1 className='text-center text-4xl font-bold mb-16 md:text-left'>
-              My Skills
+              開發技能
             </h1>
             <div className='flex flex-wrap flex-row justify-center md:justify-start'>
               {skills.map((item, idx) => {

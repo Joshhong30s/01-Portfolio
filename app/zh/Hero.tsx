@@ -23,12 +23,9 @@ const Hero = () => {
             Josh Hong
           </h1>
           <p className='text-lg mt-4 mb-6 md:text-2xl md:mt-10 md:mb-12'>
-            Hi I am Josh! A{' '}
-            <span className='font-semibold text-teal-600'>
-              frontend developer{' '}
-            </span>
-            passionate about bringing digital experiences to life through
-            beautiful and functional design
+            嗨，我是Josh! 一個{' '}
+            <span className='font-semibold text-teal-600'>前端工程師 </span>
+            。熱衷於學習並應用各種軟體開發技巧與專案。
           </p>
           <Link
             to='projects'
@@ -39,7 +36,7 @@ const Hero = () => {
             offset={-100}
             duration={500}
           >
-            See My Projects
+            作品集
           </Link>
         </div>
       </div>

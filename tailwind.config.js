@@ -10,6 +10,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        karla: [`var(--font-karla)`, 'sans-serif'],
+        roboto: [`var(--font-roboto)`, 'sans-serif'],
+        montserrat: [`var(--font-montserrat)`, 'sans-serif'],
+        sourcesanspro: [`var(--font-sourcesanspro)`, 'sans-serif'],
+      },
       animation: {
         bounce:
           'bounce 0.5s alternate cubic-bezier(0.95, 0.05, 0.795, 0.35) infinite',

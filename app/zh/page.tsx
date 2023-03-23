@@ -1,6 +1,6 @@
 'use client'
 
-import '../styles/globals.css'
+import '../../styles/globals.css'
 import About from './About'
 import Hero from './Hero'
 import Projects from './Projects'

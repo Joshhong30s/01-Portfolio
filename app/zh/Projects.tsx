@@ -1,5 +1,4 @@
 // Projects.tsx
-'use client'
 
 import Image from 'next/image'
 import React from 'react'
@@ -26,7 +25,7 @@ const projects: Project[] = [
     id: '2',
     title: 'Todo Kanban App',
     description: 'Simple to-do app with drag & drop feature.',
-    imageUrl: '/08todo.png',
+    imageUrl: '../08todo.png',
     liveUrl: 'https://08-simple-todo-kanban.vercel.app',
     repoUrl: 'https://github.com/Joshhong30s/08SimpleTodoKanban',
   },
@@ -35,7 +34,7 @@ const projects: Project[] = [
 const Projects = () => {
   return (
     <section id='projects' className='my-10 py-16 sm:py-32'>
-      <h2 className='text-4xl font-bold mb-10 text-center'>My Projects</h2>
+      <h2 className='text-4xl font-bold mb-10 text-center'>專案作品</h2>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
         {projects.map((project) => (
           <div
