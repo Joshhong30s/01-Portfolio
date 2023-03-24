@@ -46,7 +46,7 @@ function Navbar() {
   const pathname = usePathname()
 
   return (
-    <header className='w-full mx-auto px-4 bg-white shadow fixed top-0 z-50 sm:px-20 dark:bg-stone-900 dark:border-b dark:border-stone-600'>
+    <header className='w-full mx-auto px-4 bg-white shadow fixed py-2 top-0 z-50 sm:px-20 dark:bg-stone-900 dark:border-b dark:border-stone-600'>
       <div className='justify-between md:items-center md:flex'>
         <div className='md:py-1 md:ml-10 md:block flex items-center justify-between'>
           <Link
@@ -60,8 +60,8 @@ function Navbar() {
             <Image
               src='/logo.png'
               alt=''
-              width={55}
-              height={55}
+              width={40}
+              height={40}
               color='transparent'
               className='00 rounded-md transition duration-300 hover:bg-neutral-700 dark:hover:bg-slate-100 hover:ease-in'
             ></Image>

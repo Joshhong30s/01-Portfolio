@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@screen sm {
+  section#home {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+}
+
+@screen sm {
+  section#home {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+}
+
+@screen md {
+  section#home {
+    font-size: 1rem;
+    padding: 2rem;
+  }
+}
+
+@screen lg {
+  section#home {
+    font-size: 1.1rem;
+    padding: 3rem;
+  }
+}
+
+@screen xl {
+  section#home {
+    font-size: 1.2rem;
+    padding: 4rem;
+  }
+}

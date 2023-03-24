@@ -1,6 +1,8 @@
 // Projects.tsx
+'use client'
 
-import Image from 'next/image'
+import Image from 'next/legacy/image'
+import Link from 'next/link'
 import React from 'react'
 
 interface Project {
@@ -25,7 +27,7 @@ const projects: Project[] = [
     id: '2',
     title: 'Todo Kanban App',
     description: 'Simple to-do app with drag & drop feature.',
-    imageUrl: '../08todo.png',
+    imageUrl: '/08todo.jpg',
     liveUrl: 'https://08-simple-todo-kanban.vercel.app',
     repoUrl: 'https://github.com/Joshhong30s/08SimpleTodoKanban',
   },
@@ -33,40 +35,46 @@ const projects: Project[] = [
 
 const Projects = () => {
   return (
-    <section id='projects' className='my-10 py-16 sm:py-32'>
-      <h2 className='text-4xl font-bold mb-10 text-center'>專案作品</h2>
+    <section
+      id='projects'
+      className='min-h-screen flex flex-col my-12 md:my-12 pb-8 md:pt-8'
+    >
+      <h2 className='text-4xl font-bold mb-10 md:mb-24 text-center'>
+        專案作品
+      </h2>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
         {projects.map((project) => (
           <div
             key={project.id}
-            className='rounded shadow-md p-6 bg-white dark:bg-stone-900'
+            className='group rounded shadow-md p-6 bg-gray-100 dark:bg-stone-900 h-auto min-h-[400px]transition-all duration-300 transform hover:scale-110'
           >
-            <Image
-              className='rounded-md mb-6 w-full h-64 object-cover'
-              src='/02blog.jpg'
-              alt=''
-              width={300}
-              height={300}
-            />
+            <div className='relative overflow-hidden border-teal-600 rounded-md mb-6 w-full h-64'>
+              <Image
+                className='object-cover transition-opacity duration-300 hover:opacity-50'
+                src={project.imageUrl}
+                alt=''
+                layout='fill'
+              />
+            </div>
             <h3 className='text-2xl font-semibold mb-4'>{project.title}</h3>
-            <p className='text-lg mb-6'>{project.description}</p>
+            <p className='text-lg mb-6 h-36'>{project.description}</p>
             <div className='flex justify-between'>
-              <a
+              <Link
                 className='text-teal-600 hover:text-teal-500 font-semibold'
                 href={project.liveUrl}
                 target='_blank'
                 rel='noopener noreferrer'
               >
                 Live Demo
-              </a>
-              <a
+              </Link>
+              <Link
                 className='text-teal-600 hover:text-teal-500 font-semibold'
                 href={project.repoUrl}
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                Repository
-              </a>
+                Github
+              </Link>
             </div>
           </div>
         ))}

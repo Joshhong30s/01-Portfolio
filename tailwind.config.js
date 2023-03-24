@@ -10,6 +10,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'brushstroke-bg': "url('/brushstroke.png')",
+        'brushstroke2-bg': "url('/brushstroke2.png')",
+        'brushstroke3-bg': "url('/brushstroke3.png')",
+        'brushstroke4-bg': "url('/brushstroke4.png')",
+        'brushstroke5-bg': "url('/brushstroke5.png')",
+        'brushstroke6-bg': "url('/brushstroke6.png')",
+        'brushstroke7-bg': "url('/brushstroke7.png')",
+        'brushstroke8-bg': "url('/brushstroke8.png')",
+        'brushstrokefull-bg': "url('/brushstrokefull.png')",
+      },
       fontFamily: {
         karla: [`var(--font-karla)`, 'sans-serif'],
         roboto: [`var(--font-roboto)`, 'sans-serif'],

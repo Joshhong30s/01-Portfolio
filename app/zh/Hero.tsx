@@ -7,8 +7,8 @@ import { IoMdArrowDown } from 'react-icons/io'
 
 const Hero = () => {
   return (
-    <section id='home'>
-      <div className='flex flex-col items-center justify-center text-center my-10 py-16 sm:py-32 md:flex-row md:space-x-4 md:text-left md:py-52'>
+    <section id='home' className=' min-h-screen flex flex-col'>
+      <div className='flex flex-col items-center justify-center text-center my-10 py-16 sm:py-32 md:flex-row md:space-x-4 md:text-left md:py-48 xl:py-52'>
         <div className='md:w-1/2 md:mt-2'>
           <Image
             className='rounded-full'
@@ -25,7 +25,7 @@ const Hero = () => {
           <p className='text-lg mt-4 mb-6 md:text-2xl md:mt-10 md:mb-12'>
             嗨，我是Josh! 一個{' '}
             <span className='font-semibold text-teal-600'>前端工程師 </span>
-            。熱衷於學習並應用各種軟體開發技巧與專案。
+            。熱衷於學習並應用各種軟體開發技巧與專案，目前正在累積前端作品。以下是我的自我介紹和專案作品集，歡迎指教。
           </p>
           <Link
             to='projects'

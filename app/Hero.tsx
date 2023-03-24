@@ -7,11 +7,11 @@ import { IoMdArrowDown } from 'react-icons/io'
 
 const Hero = () => {
   return (
-    <section id='home'>
-      <div className='flex flex-col items-center justify-center text-center my-10 py-16 sm:py-32 md:flex-row md:space-x-4 md:text-left md:py-52'>
+    <section id='home' className=' min-h-screen flex flex-col'>
+      <div className='flex flex-col items-center justify-center text-center my-10 py-16 sm:py-32 md:flex-row md:space-x-4 md:text-left md:py-48 xl:py-52 '>
         <div className='md:w-1/2 md:mt-2'>
           <Image
-            className='rounded-full'
+            className='rounded-full '
             src='/josh.jpg'
             alt=''
             width={300}
@@ -44,7 +44,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* down arrow link to about section */}
       <div className='flex flex-row justify-center items-center'>
         <Link
           to='about'
@@ -57,6 +56,8 @@ const Hero = () => {
           <IoMdArrowDown size={50} className='animate-bounce' />
         </Link>
       </div>
+      {/* down arrow link to about section */}
+      <div className='bg-brushstroke5-bg bg-center absolute opacity-50 dark:opacity-20 object-cover bg-no-repeat top-0 left-0 z-[-1] w-full h-full'></div>
     </section>
   )
 }

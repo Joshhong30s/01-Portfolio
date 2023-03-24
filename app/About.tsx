@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import { IMAGES_MANIFEST } from 'next/dist/shared/lib/constants'
+import { IoMdArrowDown } from 'react-icons/io'
+import { Link } from 'react-scroll'
 
 const skills = [
   { skills: 'HTML' },
@@ -18,8 +20,8 @@ const skills = [
 
 const About = () => {
   return (
-    <section id='about'>
-      <div className='my-12 pb-12 md:pt-8 md:pb-48'>
+    <section id='about' className='min-h-screen flex flex-col'>
+      <div className='my-12 pb-12 md:pt-8 md:pb-12'>
         {/* <h1 className='text-center font-semibold text-4xl md:text-7xl'>
           About.
           <hr className='w-6 md:w-10 h-0.5 mx-auto my-12 bg-white border-0 rounded'></hr>
@@ -86,6 +88,19 @@ const About = () => {
             ></Image>
           </div>
         </div>
+      </div>
+
+      <div className='flex flex-row justify-center items-center'>
+        <Link
+          to='projects'
+          activeClass='active'
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >
+          <IoMdArrowDown size={50} className='animate-bounce' />
+        </Link>
       </div>
     </section>
   )
