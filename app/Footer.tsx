@@ -1,8 +1,14 @@
 import React from 'react'
 import { FaGithub, FaLinkedin, FaLine, FaBlogger } from 'react-icons/fa'
 
-const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+const isClient = typeof window !== 'undefined'
+const isMobile = isClient
+  ? /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+  : false
+
 const handleLineClick = () => {
+  if (!isClient) return
+
   if (isMobile) {
     window.location.href = 'https://line.me/ti/p/0u5WhCBHF-'
   } else {
