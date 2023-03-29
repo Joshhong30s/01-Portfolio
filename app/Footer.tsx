@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaGithub, FaLinkedin, FaLine, FaBlogger } from 'react-icons/fa'
 
 const isClient = typeof window !== 'undefined'
@@ -16,7 +15,7 @@ const handleLineClick = () => {
   }
 }
 
-function Footer() {
+export default function Footer() {
   return (
     <footer className='mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl'>
       <hr className='w-full h-0.5 mx-auto mt-8 bg-neutral-200 '></hr>
@@ -66,5 +65,3 @@ function Footer() {
     </footer>
   )
 }
-
-export default Footer
