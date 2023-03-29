@@ -1,5 +1,3 @@
-'use client'
-
 import { ThemeProvider } from 'next-themes'
 import Footer from './Footer'
 import Navbar from './components/Navbar'
