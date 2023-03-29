@@ -16,15 +16,15 @@ interface Project {
 const projects: Project[] = [
   {
     id: '1',
-    title: 'Recipe Sharing Blog',
-    description: 'MongoDB, Express.JS, React, NodeJS',
+    title: '食譜分享網站',
+    description: 'MongoDB, Express.JS, React, NodeJS, Backend',
     imageUrl: '/02blog.jpg',
     liveUrl: 'https://jjreactblog.netlify.app',
     repoUrl: 'https://github.com/Joshhong30s/02blog-react',
   },
   {
     id: '2',
-    title: 'Todo Kanban App',
+    title: '拖拉待辦清單看板',
     description: 'Next.js, React-beautiful-dnd, Chakra UI',
     imageUrl: '/08todo.jpg',
     liveUrl: 'https://08-simple-todo-kanban.vercel.app',
@@ -40,11 +40,11 @@ const projects: Project[] = [
   },
   {
     id: '4',
-    title: 'Personal Dev Blog',
-    description: 'Next.JS, Markdown',
-    imageUrl: '',
-    liveUrl: 'TBD',
-    repoUrl: 'TBD',
+    title: '個人網站暨技術部落格',
+    description: 'Next.JS, Tailwind CSS, Typescript, Markdown Blog',
+    imageUrl: '/01portfolio.jpg',
+    liveUrl: 'https://joshhong.vercel.app',
+    repoUrl: 'https://github.com/Joshhong30s/01-Portfolio',
   },
 ]
 

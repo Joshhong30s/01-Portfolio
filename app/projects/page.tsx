@@ -16,8 +16,8 @@ interface Project {
 const projects: Project[] = [
   {
     id: '1',
-    title: 'Recipe Sharing Blog',
-    description: 'MongoDB, Express.JS, React, NodeJS',
+    title: 'Recipe Sharing App',
+    description: 'MongoDB, Express.JS, React, NodeJS, Backend',
     imageUrl: '/02blog.jpg',
     liveUrl: 'https://jjreactblog.netlify.app',
     repoUrl: 'https://github.com/Joshhong30s/02blog-react',
@@ -25,7 +25,7 @@ const projects: Project[] = [
   {
     id: '2',
     title: 'Todo Kanban App',
-    description: 'Next.js, React-beautiful-dnd',
+    description: 'Next.js, React-beautiful-dnd, Chakra UI',
     imageUrl: '/08todo.jpg',
     liveUrl: 'https://08-simple-todo-kanban.vercel.app',
     repoUrl: 'https://github.com/Joshhong30s/08SimpleTodoKanban',
@@ -41,10 +41,10 @@ const projects: Project[] = [
   {
     id: '4',
     title: 'Personal Dev Blog',
-    description: 'Next.JS, Markdown',
-    imageUrl: '',
-    liveUrl: 'TBD',
-    repoUrl: 'TBD',
+    description: 'Next.JS, Tailwind CSS, Typescript, Markdown Blog',
+    imageUrl: '/01portfolio.jpg',
+    liveUrl: 'https://joshhong.vercel.app',
+    repoUrl: 'https://github.com/Joshhong30s/01-Portfolio',
   },
 ]
 
