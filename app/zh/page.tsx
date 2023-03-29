@@ -1,12 +1,11 @@
 import '../../styles/globals.css'
 import About from './about/page'
-import Hero from './Hero'
 import Projects from './projects/page'
 import { Karla } from '@next/font/google'
 import { Roboto } from '@next/font/google'
 import { Montserrat } from '@next/font/google'
 import { Source_Sans_Pro } from '@next/font/google'
-import HeroSection from '../components/HeroSection'
+import HeroSectionCh from './HeroSectionCh'
 import ProfilePic from '../components/ProfilePic'
 import Posts from '../components/Posts'
 
@@ -37,7 +36,7 @@ export default function Home() {
       className={`${roboto.variable} mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl`}
     >
       <ProfilePic />
-      <HeroSection />
+      <HeroSectionCh />
       <Posts />
     </main>
   )
