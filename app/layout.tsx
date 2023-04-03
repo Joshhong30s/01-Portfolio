@@ -1,10 +1,8 @@
 'use client'
-
+import '../styles/globals.css'
 import { ServerThemeProvider, ThemeProvider } from 'next-themes'
 import Footer from './Footer'
 import Navbar from './components/Navbar'
-import ProfilePic from './components/ProfilePic'
-import HeroSection from './components/HeroSection'
 import type { Metadata } from 'next'
 
 // export const metadata = {

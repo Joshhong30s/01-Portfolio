@@ -1,7 +1,6 @@
 'use client'
 import Link from 'next/link'
-import React, { useState, useEffect } from 'react'
-// import { Link } from 'react-scroll'
+import React, { useState } from 'react'
 import { useTheme } from 'next-themes'
 import {
   RiEnglishInput,
@@ -132,22 +131,30 @@ function Navbar() {
                   </button>
                   <button
                     onClick={() => {
-                      const newPath = pathname === '/' ? '/zh' : '/'
+                      const newPath = pathname.includes('/zh')
+                        ? pathname.replace('/zh', '')
+                        : `zh${pathname}`
                       router.push(newPath)
                     }}
                   >
-                    {pathname === '/' ? (
-                      <IoLanguage size={30} />
-                    ) : (
+                    {pathname.includes('/posts') ? null : pathname.includes(
+                        '/zh'
+                      ) ? (
                       <RiEnglishInput size={30} />
+                    ) : (
+                      <IoLanguage size={30} />
                     )}
                   </button>
                 </>
               ) : (
                 <>
                   <button
-                    onClick={() => setTheme('dark')}
-                    className='bg-gray-50 p-2 rounded-full'
+                    onClick={() => {
+                      const newPath = pathname.includes('/zh')
+                        ? pathname.replace('/zh', '')
+                        : `zh${pathname}`
+                      router.push(newPath)
+                    }}
                   >
                     <RiMoonFill size={25} />
                   </button>
@@ -157,10 +164,12 @@ function Navbar() {
                       router.push(newPath)
                     }}
                   >
-                    {pathname === '/' ? (
-                      <IoLanguage size={30} />
-                    ) : (
+                    {pathname.includes('/posts') ? null : pathname.includes(
+                        '/zh'
+                      ) ? (
                       <RiEnglishInput size={30} />
+                    ) : (
+                      <IoLanguage size={30} />
                     )}
                   </button>
                 </>
