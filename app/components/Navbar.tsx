@@ -149,18 +149,16 @@ function Navbar() {
               ) : (
                 <>
                   <button
-                    onClick={() => {
-                      const newPath = pathname.includes('/zh')
-                        ? pathname.replace('/zh', '')
-                        : `zh${pathname}`
-                      router.push(newPath)
-                    }}
+                    onClick={() => setTheme('dark')}
+                    className='bg-gray-50 p-2 rounded-full'
                   >
                     <RiMoonFill size={25} />
                   </button>
                   <button
                     onClick={() => {
-                      const newPath = pathname === '/' ? '/zh' : '/'
+                      const newPath = pathname.includes('/zh')
+                        ? pathname.replace('/zh', '')
+                        : `zh${pathname}`
                       router.push(newPath)
                     }}
                   >

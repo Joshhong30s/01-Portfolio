@@ -1,4 +1,3 @@
-// Projects.tsx
 'use client'
 
 import Image from 'next/legacy/image'
