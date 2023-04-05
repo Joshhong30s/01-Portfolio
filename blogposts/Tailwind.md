@@ -4,11 +4,13 @@ date: '2023-03-30'
 ---
 
 &nbsp;
+
+Tailwind CSS 是一個用過後就回不去的東西。為什麼呢？以下簡短介紹 Tailwind 的特色和使用心得
+
+&nbsp;
 &nbsp;
 
 ### Tailwind CSS 的特色
-
-Tailwind CSS 是一個用過後就回不去的東西。為什麼這麼說呢？以開發者角度來看的差異我認為主要是以下三點
 
 - Utility-first，以功能性 Class 為主
 - 直接在 HTML 裡寫入 CSS
