@@ -3,14 +3,11 @@ title: 'Tailwind CSS 使用心得，開發速度有感提升'
 date: '2023-03-30'
 ---
 
-&nbsp;
-
 Tailwind CSS 是一個用過後就回不去的東西。為什麼呢？以下簡短介紹 Tailwind 的特色和使用心得
 
 &nbsp;
-&nbsp;
 
-### Tailwind CSS 的特色
+## Tailwind CSS 的特色
 
 - Utility-first，以功能性 Class 為主
 - 直接在 HTML 裡寫入 CSS
@@ -19,7 +16,7 @@ Tailwind CSS 是一個用過後就回不去的東西。為什麼呢？以下簡�
 &nbsp;
 &nbsp;
 
-### Tailwind CSS 的厲害之處
+## Tailwind CSS 的厲害之處
 
 我們直接來看一小段本部落格 navbar 以 Tailwind 撰寫的程式碼
 
@@ -56,7 +53,7 @@ Tailwind 有預定義的樣式，但這些樣式比如顏色、邊界、元素�
 &nbsp;
 &nbsp;
 
-### 與傳統 CSS、Bootstrap 的比較
+## 與傳統 CSS、Bootstrap 的比較
 
 在之前的小型專案我使用過 CSS 和 Bootstrap，感覺兩者分處於光譜的兩端：
 
@@ -68,7 +65,7 @@ Tailwind 有預定義的樣式，但這些樣式比如顏色、邊界、元素�
 &nbsp;
 &nbsp;
 
-### 你適合使用 Tailwind 嗎？怎麼判斷這個問題？
+## 你適合使用 Tailwind 嗎？怎麼判斷這個問題？
 
 Tailwind 是一個有限制的框架，但在這個框架內開發者其實享有更多的自由。我想可以有個比喻：
 

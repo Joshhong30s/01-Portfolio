@@ -1,19 +1,19 @@
 ---
 title: 'useState'
-date: '2023-03-13'
+date: '2023-03-31'
 ---
 
-### Definition
+## Definition
 
 useState is a React Hook that allows us to manage and preserve state variables in functional components. It enables the handling of local state and triggers a re-render of the component when the state changes.
 
-### Use Scenario
+## Use Scenario
 
 For exmaple, a sign-up form for a website requires input fields for username, email, and password. The developer needs to store the input values and update them as the user key-in.
 
 useState can store the current input values as states, and update whenever state changes, triggering a re-render of the component.
 
-### How it works
+## How it works
 
 ```javascript
 import React, { useState } from 'react'

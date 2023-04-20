@@ -1,5 +1,5 @@
 ---
-title: 'What is API and ..REST API?'
+title: 'What is API and ..REST API'
 date: '2023-04-05'
 ---
 
@@ -10,14 +10,14 @@ How to explain API and RESTful API? I've watched couple of good materials in the
 &nbsp;
 &nbsp;
 
-### What is API?
+## What is API?
 
 API is an interface consist of set of functions and endpoints that allow different software components to communicate with each other. For example, it could be frontend and backend, between backend services, or software to software.
 
 &nbsp;
 &nbsp;
 
-### Not sure if I get it..anyway, why we need API..and to do what？
+## Not sure if I get it..anyway, why we need API..and to do what？
 
 Let me put this way. It's like a menu for a restaurant. When customers(client) want to order something(get), or want to sign up as a member(post), they don't directly goes into kitchen to talk a chef(backend) and managers(database). Instead, they order from menu or tell waiters what they want.
 
@@ -27,7 +27,7 @@ In the programming world, API enable users send requests by calling API so the b
 &nbsp;
 &nbsp;
 
-### Example
+## Example
 
 Hope it's more clear. Now go back to the API definition with following example code.
 
@@ -67,7 +67,7 @@ So this is what I said - the definition of API is pretty abstract, however as lo
 &nbsp;
 &nbsp;
 
-### What is REST API？
+## What is REST API？
 
 In definition, REST stand for _Representational State Transfer_ as a specific architectural style for building web services. It uses HTTP methods (GET, POST, PUT, and DELETE) to perform CRUD (Create, Read, Update, Delete) operations on backend resources.
 
