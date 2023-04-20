@@ -6,6 +6,7 @@ import Link from 'next/link'
 interface Project {
   id: string
   title: string
+  intro: string
   description: string
   imageUrl: string
   liveUrl: string
@@ -16,6 +17,7 @@ const projects: Project[] = [
   {
     id: '1',
     title: 'Recipe Sharing App',
+    intro: 'TBD',
     description: 'MongoDB, Express.JS, React, NodeJS, Backend',
     imageUrl: '/02blog.jpg',
     liveUrl: 'https://jjreactblog.netlify.app',
@@ -24,6 +26,8 @@ const projects: Project[] = [
   {
     id: '2',
     title: 'Todo Kanban App',
+    intro:
+      'This is a simple drag-and-drop To-do List, I use it for remembering everything I need to do after my baby born. This app is fully responsive and uses local storage, so I can easily track and get all of the things done easily.',
     description: 'Next.js, React-beautiful-dnd, Chakra UI',
     imageUrl: '/08todo.jpg',
     liveUrl: 'https://08-simple-todo-kanban.vercel.app',
@@ -32,6 +36,7 @@ const projects: Project[] = [
   {
     id: '3',
     title: 'React Dashboard',
+    intro: 'TBD',
     description: 'TBD',
     imageUrl: '',
     liveUrl: 'TBD',
@@ -40,6 +45,8 @@ const projects: Project[] = [
   {
     id: '4',
     title: 'Personal Dev Blog',
+    intro:
+      'This is where you are now. This website is made by NextJS, with simple blog functionality, light/dark mode switch, English/Chinese switch, providing good user experience to users interested in my dev jounrney and projects.',
     description: 'Next.JS, Tailwind CSS, Typescript, Markdown Blog',
     imageUrl: '/01portfolio.jpg',
     liveUrl: 'https://joshhong.vercel.app',
@@ -71,6 +78,9 @@ const Projects = () => {
                   alt=''
                   layout='fill'
                 />
+                <div className='absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-slate-900 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-80 hover:text-white text-xl p-6'>
+                  {project.intro}
+                </div>
               </Link>
             </div>
             <h3 className='text-3xl font-semibold mb-4'>{project.title}</h3>

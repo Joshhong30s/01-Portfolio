@@ -9,7 +9,7 @@ const HeroSectionCh = () => {
           <span>&#128075;</span>
           <span className='whitespace-nowrap text-center'>
             {' '}
-            歡迎來到我的技術部落格{' '}
+            歡迎來到我的技術部落格
           </span>
         </p>
       </section>

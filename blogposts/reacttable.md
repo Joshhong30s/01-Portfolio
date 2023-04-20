@@ -3,7 +3,7 @@ title: 'React Table'
 date: '2023-04-18'
 ---
 
-I use React Table for table components. There are also other table solutions like MUI and AntDesign there, but React Table seems to be the most popular and it's style-free for me to integrate my themes and Tailwind CSS. Let's get to it.
+I use React Table for table components. There are also other table solutions like MUI and Data-grid there, but React Table seems to be the most popular and it's style-free for user to integrate themes and Tailwind CSS. Let's get to it.
 
 ## Step 1: Install React Table
 
@@ -178,6 +178,8 @@ Still hard to understand right? If you're a self-taught coder like me I'm sure y
 &nbsp;
 &nbsp;
 
-This is it. Generally I think it's fine if you don't get 100% understanding of all of this because it takes time to collect thoughts. You might think it's complicated to make a table by using React Table. Yes, it is too complicated for a simple table in this case, however as real-world table won't be as simple like this case, we will need React Table to provide us full manipulation and systematical ways to make complicated table.
+This is it for a basic table. I don't think React table is an easy tool honestly - so many functions and syntaxes making me so confused at first time, however that's why it's powerful for data manipulation and table customization.
+
+It takes time to collect thoughts to understand it, however, I founded it's easier to follow as I tried to make more table like sorting, formatting, filtering, pagination because its powerful enough.
 
 Hope this article will help, I will make more articles for React Table in the near future.
