@@ -1,4 +1,3 @@
-// Importing the fs, path, and gray-matter modules.
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
@@ -9,10 +8,11 @@ import html from 'remark-html'
 const postsDirectory = path.join(process.cwd(), 'blogposts')
 
 export function getSortedPostsData() {
-  // get file names under /posts
+  // reads the contents of a directory and returns an array of filenames in the directory
   const fileNames = fs.readdirSync(postsDirectory)
+
   const allPostsData = fileNames.map((fileName) => {
-    //remove ".md" from file name to get id
+    //remove ".md" from file name to get id (regular expression)
     const id = fileName.replace(/\.md$/, '')
 
     //read markdown file as string

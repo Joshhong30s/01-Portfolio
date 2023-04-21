@@ -1,7 +1,7 @@
 'use client'
 import '../styles/globals.css'
 import { ServerThemeProvider, ThemeProvider } from 'next-themes'
-import Footer from './Footer'
+import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import type { Metadata } from 'next'
 

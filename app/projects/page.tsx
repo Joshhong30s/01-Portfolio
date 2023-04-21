@@ -78,7 +78,7 @@ const Projects = () => {
                   alt=''
                   layout='fill'
                 />
-                <div className='absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-slate-900 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-80 hover:text-white text-xl p-6'>
+                <div className='absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-slate-900 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-95 hover:text-white text-xl p-6'>
                   {project.intro}
                 </div>
               </Link>
