@@ -5,7 +5,8 @@ Welcome to my Next.JS dev blog/Portfolio.
 ## Folder Structure
 
 'App' structure
-.
+
+```
 ├── about
 │ └── page.tsx
 ├── components
@@ -31,6 +32,7 @@ Welcome to my Next.JS dev blog/Portfolio.
 │ └── page.tsx
 ├── layout.tsx
 └── page.tsx
+```
 
 ## Tech Stack
 
