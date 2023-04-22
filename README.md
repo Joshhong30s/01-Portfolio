@@ -1,9 +1,10 @@
-# Welcome to my personal portfolio project
+# Josh's Dev Blog & Portfolio
 
-## Getting Started
+Welcome to my Next.JS dev blog/Portfolio.
 
-First, you may check 'app' folder structure:
+## Folder Structure
 
+'App' structure
 .
 ├── about
 │ └── page.tsx
@@ -31,12 +32,32 @@ First, you may check 'app' folder structure:
 ├── layout.tsx
 └── page.tsx
 
-And under the 'lib' folder
-.
-├── getFormattedDate.tsx
-├── posts.tsx
-└── send-email.tsx
+## Tech Stack
 
-## Learn More about me
+Next.js 13.2, Typescript, TailwindCSS, Markdown
 
-## Why next.js?
+## Features
+
+- Light/dark mode toggle
+- English/Chinese toggle
+- Markdown blog
+- Project Portfolio
+
+## Screenshots
+
+![App Screenshot](https://i.imgur.com/FNCiZz6.jpg)
+
+## Feedback
+
+If you are interested in me or have comments for my projects, feel free to send me an email 30sboynote@gmail.com
+
+## 🚀 About Me
+
+- Currently a frontend developer.
+- Aim to become a fullstack developer.
+- 10 years experience in B2B software sales & BD role in multinational corporations and rising startups.
+
+## 🔗 Links
+
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://joshhong.vercel.app/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/josh-hong-163644102/)
