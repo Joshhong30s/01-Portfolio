@@ -1,15 +1,23 @@
-import { google } from 'googleapis'
-
+import { google, Auth as googleAuth } from 'googleapis'
 type SheetForm = {
   visitor: string
   email: string
   message: string
 }
 export async function POST(req: Request) {
+  // Parse the JSON string from the environment variable
+  const credentials = JSON.parse(
+    process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON ?? '{}'
+  )
+
   // auth
-  const auth = await google.auth.getClient({
-    scopes: ['https://www.googleapis.com/auth/spreadsheets'],
-  })
+  const auth = new googleAuth.JWT(
+    credentials.client_email,
+    undefined,
+    credentials.private_key,
+    ['https://www.googleapis.com/auth/spreadsheets'],
+    undefined
+  )
   const sheets = google.sheets({ version: 'v4', auth })
 
   // query
