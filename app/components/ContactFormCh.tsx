@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Swal from 'sweetalert2'
 
-export default function ContactForm() {
+export default function ContactFormCh() {
   const [visitor, setVisitor] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
@@ -27,7 +27,7 @@ export default function ContactForm() {
         console.log(data)
         Swal.fire({
           icon: 'success',
-          title: 'Thank you for your message!',
+          title: '謝謝留言，已成功送出!',
           showConfirmButton: false,
           timer: 3000,
           timerProgressBar: true,
@@ -45,7 +45,10 @@ export default function ContactForm() {
       }
     } catch (error) {
       console.error('Error submitting data:', error)
-      alert('Error submitting data')
+      Swal.fire({
+        icon: 'error',
+        title: '留言送出失敗',
+      })
     }
   }
 
@@ -60,7 +63,7 @@ export default function ContactForm() {
             htmlFor='visitor'
             className='text-lg font-medium text-gray-600  dark:text-gray-300 mb-2'
           >
-            Your Name
+            你/妳的稱呼
           </label>
           <input
             type='text'
@@ -75,7 +78,7 @@ export default function ContactForm() {
             htmlFor='email'
             className='text-lg font-medium text-gray-600  dark:text-gray-300 mt-4 mb-2'
           >
-            Your Email
+            你/妳的信箱
           </label>
           <input
             type='text'
@@ -90,7 +93,7 @@ export default function ContactForm() {
             htmlFor='message'
             className='text-lg font-medium text-gray-600  dark:text-gray-300 mt-4 mb-2'
           >
-            Your Message
+            你/妳的留言
           </label>
           <textarea
             id='message'
@@ -104,10 +107,10 @@ export default function ContactForm() {
             type='submit'
             className='w-full mt-6 text-lg md:text-xl font-medium rounded-lg shadow-md bg-gray-800 text-white  hover:bg-gray-600 dark:bg-gray-300 dark:text-gray-800 dark:hover:bg-white transition duration-300 py-2'
           >
-            Confirm & Send
+            送出留言
           </button>
           <button className='w-full mt-4 text-lg md:text-xl font-medium rounded-lg shadow-md bg-white text-gray-800  hover:bg-gray-400 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 transition duration-300 py-2'>
-            <Link href='/'>Back to Home</Link>
+            <Link href='/zh'>回到首頁</Link>
           </button>
         </form>
       </div>
