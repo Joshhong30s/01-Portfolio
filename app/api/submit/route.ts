@@ -1,15 +1,34 @@
 import { google } from 'googleapis'
+import { GoogleAuth } from 'google-auth-library'
 
 type SheetForm = {
   visitor: string
   email: string
   message: string
 }
+
 export async function POST(req: Request) {
-  // auth
-  const auth = await google.auth.getClient({
+  if (!process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON_BASE64) {
+    throw new Error(
+      'GOOGLE_APPLICATION_CREDENTIALS_JSON_BASE64 is not set in environment variables'
+    )
+  }
+
+  // Decode the base64 string
+  const credentialsJson = Buffer.from(
+    process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON_BASE64,
+    'base64'
+  ).toString()
+
+  // Parse the JSON string into an object
+  const credentials = JSON.parse(credentialsJson)
+
+  // Create a Google Auth client
+  const auth = new GoogleAuth({
+    credentials,
     scopes: ['https://www.googleapis.com/auth/spreadsheets'],
   })
+
   const sheets = google.sheets({ version: 'v4', auth })
 
   // query
