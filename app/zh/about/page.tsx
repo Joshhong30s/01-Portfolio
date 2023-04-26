@@ -1,4 +1,5 @@
 import ContactFormCh from '@/app/components/ContactFormCh'
+import SkillIcon from '@/app/components/SkillIcon'
 
 const skills = [
   { skills: 'HTML' },
@@ -54,16 +55,7 @@ const About = () => {
               程式技能
             </h1>
             <div className='flex flex-wrap justify-center text-left'>
-              {skills.map((item, idx) => {
-                return (
-                  <p
-                    key={idx}
-                    className='rounded-md font-medium text-gray-800 bg-gray-100 dark:text-gray-50 dark:bg-slate-800 px-4 py-2 mr-2 mt-2'
-                  >
-                    {item.skills}
-                  </p>
-                )
-              })}
+              <SkillIcon />
             </div>
           </div>
 

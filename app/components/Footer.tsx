@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaLine, FaBlogger } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaLine, FaEnvelope } from 'react-icons/fa'
 
 const isClient = typeof window !== 'undefined'
 const isMobile = isClient
@@ -50,12 +50,8 @@ export default function Footer() {
               size={30}
             />
           </a>
-          <a
-            href='https://jjreactblog.netlify.app/'
-            rel='noreferrer'
-            target='_blank'
-          >
-            <FaBlogger
+          <a href='/about/#contact-form' rel='noreferrer'>
+            <FaEnvelope
               className='hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100'
               size={30}
             />

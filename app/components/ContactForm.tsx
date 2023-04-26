@@ -53,7 +53,7 @@ export default function ContactForm() {
     <div className='bg-center'>
       <div className='flex flex-col items-center justify-center h-full'>
         <form
-          className='flex flex-col w-full md:w-3/4 lg:w-1/2 xl:w-1/3'
+          className='flex flex-col w-full md:w-3/4 lg:w-1/2 xl:w-1/3 max-w-4xl mx-auto'
           onSubmit={handleSubmit}
         >
           <label

@@ -2,12 +2,7 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { useTheme } from 'next-themes'
-import {
-  RiEnglishInput,
-  RiMoonFill,
-  RiSunFill,
-  RiSunLine,
-} from 'react-icons/ri'
+import { RiEnglishInput, RiMoonFill, RiSunLine } from 'react-icons/ri'
 import { IoMdMenu, IoMdClose } from 'react-icons/io'
 import { IoLanguage } from 'react-icons/io5'
 import Image from 'next/image'
@@ -120,7 +115,7 @@ function Navbar() {
                 </Link>
               )
             })}
-            <div className='flex justify-end space-x-2 md:space-x-4'>
+            <div className='flex justify-end space-x-4'>
               {currentTheme === 'dark' ? (
                 <>
                   <button
