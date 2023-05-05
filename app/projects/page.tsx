@@ -73,15 +73,15 @@ const projects: Project[] = [
   },
   {
     id: '3',
-    title: 'Family Health Dashboard',
+    title: 'Coffee Manager Dashboard',
     stack: [
       <SiNextdotjs key='nextjs' size={30} />,
       <SiTailwindcss key='tailwindcss' size={30} />,
       <SiTypescript key='typescript' size={30} />,
-      <IoLogoReact key='nextjs' size={30} />,
+      <IoLogoReact key='react' size={30} />,
     ],
     description:
-      'An app for the whole family to record health status and provide a monitoring dashboard',
+      'A dashboard for coffee managers do customer analysis in single store or multiple stores',
     features: [
       'Dashboard (React-rechart)',
       'Table (react-table)',
@@ -89,7 +89,7 @@ const projects: Project[] = [
       'Weather API integration',
       'RWD',
     ],
-    imageUrl: '/02blog.jpg',
+    imageUrl: '/03dashboard.jpg',
     liveUrl: 'TBD',
     repoUrl: 'TBD',
   },
