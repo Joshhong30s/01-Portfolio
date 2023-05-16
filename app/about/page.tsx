@@ -29,32 +29,31 @@ const About = () => {
               <h1 className='text-center text-3xl md:text-4xl font-semibold mb-16 font-sans text-gray-800 dark:text-gray-50 border-b-2 border-gray-200 dark:border-gray-700 pb-6'>
                 About Me
               </h1>
-              <p className='text-lg font-medium text-gray-600 dark:text-gray-300'>
+              <p className='text-2xl font-normal text-gray-600 dark:text-gray-300'>
                 {' '}
-                Hi, my name is Josh. I am a{' '}
-                <span className='font-bold'>frontend developer</span>. I love
-                crafting interactive web solutions, and aspire to become a
-                fullstack developer
+                Hello! I am Josh 👋. I am a{' '}
+                <span className='font-bold'>frontend developer</span>.
               </p>
               <br />
-              <p className='text-lg font-medium text-gray-600  dark:text-gray-300'>
-                As a self-taught developer, I’ve encountered challenges
-                throughout my journey, but found immense fulfillment in creating
-                projects that address real-world problems
+              <p className='text-xl font-normal text-gray-600  dark:text-gray-300'>
+                As a frontend engineer aiming for full-stack development, the
+                learning and implementation process is full of challenges,
+                requiring continuous problem-solving to make progress.
               </p>
               <br />
-              <p className='text-lg font-medium text-gray-600  dark:text-gray-300'>
-                Before 2023, I worked with multinational corporations and
-                startups as a B2B sales professional, developing software and
-                solution businesses across diverse industries. My experience has
-                honed my ability to efficiently identify RFQs and communicate
-                effectively, skills that I believe will prove invaluable as I
-                transition into a developer role.
+              <p className='text-xl font-normal text-gray-600  dark:text-gray-300'>
+                Before becoming an engineer, I accumulated over 10 years of B2B
+                Sales experience. I have served multinational corporations and
+                well-known startups, providing services to industries at home
+                and abroad through SaaS software and customized project
+                services. My long-term service in the software industry sowed
+                the seeds of becoming an engineer.
               </p>
               <br />
-              <p className='text-lg font-medium text-gray-600  dark:text-gray-300'>
-                My journey continues, and I’m eager to embark on the next
-                chapter of my professional career
+              <p className='text-xl font-normal text-gray-600  dark:text-gray-300'>
+                Please feel free to check out my projects. If you would like to
+                chat, feel free to leave a message for me in the form below, or
+                you can also contact me through the link in the footer.
               </p>
             </div>
           </div>

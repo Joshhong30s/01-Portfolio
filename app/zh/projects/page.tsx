@@ -29,21 +29,21 @@ const projects: Project[] = [
     id: '1',
     title: '寶寶相簿留言版',
     stack: [
-      <SiNextdotjs key='nextjs' size={30} />,
-      <SiTailwindcss key='tailwindcss' size={30} />,
-      <SiTypescript key='typescript' size={30} />,
-      <SiMongodb key='typescript' size={30} />,
-      <SiExpress key='typescript' size={30} />,
+      <SiNextdotjs title='Next.js' key='nextjs' size={30} />,
+      <SiTailwindcss title='Tailwind CSS' key='tailwindcss' size={30} />,
+      <SiTypescript title='Typescript' key='typescript' size={30} />,
+      <SiMongodb title='Mongodb' key='mongodb' size={30} />,
+      <SiExpress title='Express' key='express' size={30} />,
     ],
     description: '為剛出生的兒子做的網站，每天更新相簿與成長數據',
     features: [
-      '相片&影片相簿(Mongodb)',
-      '使用者上傳相片(Imugr api)',
-      '我的最愛存取',
-      '成長儀錶板(React-echart)',
-      '成長數據(React-table)',
-      '動態留言板(Googleapi)',
-      '登入登出(Mongodb)',
+      '相片與影片相簿 (Mongodb)',
+      '使用者上傳相片 (Imugr api)',
+      '我的最愛加入/移除',
+      '成長儀錶板 (React-echart)',
+      '成長數據 (React-table)',
+      '動態留言板 (Googleapi)',
+      '登入登出 (Mongodb)',
       'RWD',
     ],
     imageUrl: '/06baby.jpg',
@@ -52,33 +52,20 @@ const projects: Project[] = [
   },
   {
     id: '2',
-    title: '拖拉待辦清單看板',
-    stack: [
-      <IoLogoReact key='nextjs' size={30} />,
-      <SiTailwindcss key='tailwindcss' size={30} />,
-      <SiTypescript key='typescript' size={30} />,
-    ],
-    description: '簡易的Todo List加上類似看板的拖拉功能',
-    features: ['Todo', '看板拖拉清單(React DnD)', 'Local Storage', 'RWD'],
-    imageUrl: '/08todo.jpg',
-    liveUrl: 'https://08-simple-todo-kanban.vercel.app',
-    repoUrl: 'https://github.com/Joshhong30s/08SimpleTodoKanban',
-  },
-  {
-    id: '3',
     title: 'Coffee Manager 顧客分析儀表板',
     stack: [
-      <SiNextdotjs key='nextjs' size={30} />,
-      <SiTailwindcss key='tailwindcss' size={30} />,
-      <SiTypescript key='typescript' size={30} />,
-      <IoLogoReact key='react' size={30} />,
+      <SiNextdotjs title='Next.js' key='nextjs' size={30} />,
+      <SiTailwindcss title='Tailwind CSS' key='tailwindcss' size={30} />,
+      <SiTypescript title='Typescript' key='typescript' size={30} />,
+      <IoLogoReact title='React' key='react' size={30} />,
     ],
-    description: '可觀察單店或比較多店的顧客分析儀表板，可動態展示多個數據圖表',
+    description:
+      '可觀察單店或比較多店的來店顧客分析儀表板，動態展示多個數據圖表',
     features: [
-      'Dashboard(React-rechart)',
-      'Table(react-table)',
+      'Dashboard (React-rechart)',
+      'Table (react-table)',
       '使用者管理',
-      '資料庫(GoogleSheet api)',
+      '資料庫 (GoogleSheet api)',
       'RWD',
     ],
     imageUrl: '/03dashboard.jpg',
@@ -86,18 +73,32 @@ const projects: Project[] = [
     repoUrl: 'TBD',
   },
   {
+    id: '3',
+    title: '拖拉待辦清單看板',
+    stack: [
+      <IoLogoReact title='React' key='nextjs' size={30} />,
+      <SiTailwindcss title='Tailwind CSS' key='tailwindcss' size={30} />,
+      <SiTypescript title='Typescript' key='typescript' size={30} />,
+    ],
+    description: '簡易的Todo List加上類似看板的拖拉功能',
+    features: ['Todo', '看板拖拉清單 (React DnD)', 'Local Storage', 'RWD'],
+    imageUrl: '/08todo.jpg',
+    liveUrl: 'https://08-simple-todo-kanban.vercel.app',
+    repoUrl: 'https://github.com/Joshhong30s/08SimpleTodoKanban',
+  },
+  {
     id: '4',
     title: '個人技術部落格',
     stack: [
-      <SiNextdotjs key='nextjs' size={30} />,
-      <SiTailwindcss key='tailwindcss' size={30} />,
-      <SiTypescript key='typescript' size={30} />,
-      <SiGooglesheets key='typescript' size={30} />,
+      <SiNextdotjs title='Next.js' key='nextjs' size={30} />,
+      <SiTailwindcss title='Tailwind CSS' key='tailwindcss' size={30} />,
+      <SiTypescript title='Typescript' key='typescript' size={30} />,
+      <SiGooglesheets title='Google Sheets' key='Google Sheets' size={30} />,
     ],
     description: '作為個人的網站展示Project，同時作為技術部落格使用',
     features: [
       'Markdown的部落格',
-      '聯絡留言板(GoogleSheet Api)',
+      '聯絡留言板 (GoogleSheet Api)',
       '專案展示',
       '深色模式切換',
       '中英語言切換',
@@ -135,7 +136,7 @@ const Projects = () => {
                 />
               </Link>
             </div>
-            <h3 className='text-3xl font-semibold text-slate-900 dark:text-gray-100 mb-6 px-4 py-1 text-center rounded-md'>
+            <h3 className='text-2xl font-semibold text-slate-900 dark:text-gray-100 mb-6 px-4 py-1 text-center rounded-md'>
               {project.title}
             </h3>
             <p className='text-xl font-medium text-slate-700 dark:text-gray-300 mb-6'>

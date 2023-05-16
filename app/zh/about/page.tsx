@@ -29,22 +29,22 @@ const About = () => {
               <h1 className='text-center text-3xl md:text-4xl font-semibold mb-16 font-sans text-gray-800 dark:text-gray-50 border-b-2 border-gray-200 dark:border-gray-700 pb-6'>
                 關於我
               </h1>
-              <p className='text-lg font-medium text-gray-600 dark:text-gray-300'>
+              <p className='text-2xl font-medium text-gray-600 dark:text-gray-300'>
                 嗨！我是 Josh Hong 👋 。我是一名前端工程師。
               </p>
 
               <br />
-              <p className='text-lg font-medium text-gray-600  dark:text-gray-300'>
-                作為一個自學開發者在學習和實作過程中是充滿挑戰的，需要不斷地解決問題持續前進。
+              <p className='text-xl font-medium text-gray-600  dark:text-gray-300'>
+                作為朝向全端發展的前端工程師，在學習和實作過程中是充滿挑戰的，需要不斷地解決問題前進。
               </p>
               <br />
-              <p className='text-lg font-medium text-gray-600  dark:text-gray-300'>
-                在2023年之前我是一位經驗豐富的B2B
-                Sales，銷售SaaS軟體與客製化專案服務給各產業。我曾在跨國企業與新創服務，能精準地與內外部的角色溝通，也因為一直都在軟體產業服務，埋下了成為工程師的種子。
+              <p className='text-xl font-medium text-gray-600  dark:text-gray-300'>
+                在成為工程師之前，我累積了10年以上的B2B
+                Sales經驗，曾在跨國企業與知名新創服務，透過SaaS軟體和客製化專案服務國內外產業，也因為長期在軟體產業服務埋下了我成為工程師的種子。
               </p>
               <br />
-              <p className='text-lg font-medium text-gray-600  dark:text-gray-300'>
-                我期待能以新的身分踏上職業生涯的下一章。如果想找我聊歡迎透過下方的連結聯繫我。
+              <p className='text-xl font-medium text-gray-600 dark:text-gray-300'>
+                歡迎查看我的專案，任何想法或指教歡迎下方表單留言給我，或者也可以透過Footer連結聯繫我。
               </p>
             </div>
           </div>

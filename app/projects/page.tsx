@@ -29,16 +29,16 @@ const projects: Project[] = [
     id: '1',
     title: 'Baby Photo Album Guestbook',
     stack: [
-      <SiNextdotjs key='nextjs' size={30} />,
-      <SiTailwindcss key='tailwindcss' size={30} />,
-      <SiTypescript key='typescript' size={30} />,
-      <SiMongodb key='typescript' size={30} />,
-      <SiExpress key='typescript' size={30} />,
+      <SiNextdotjs title='Next.js' key='nextjs' size={30} />,
+      <SiTailwindcss title='Tailwind CSS' key='tailwindcss' size={30} />,
+      <SiTypescript title='Typescript' key='typescript' size={30} />,
+      <SiMongodb title='Mongodb' key='mongodb' size={30} />,
+      <SiExpress title='Express' key='express' size={30} />,
     ],
     description:
       'A website I made for my newborn son, updated daily with photos and growth data',
     features: [
-      'Photo & Video Album (Mongodb)',
+      'Photo/Video Album (Mongodb)',
       'User photo uploads (Imgur API)',
       'Favorites access',
       'Growth Dashboard (React-echart)',
@@ -51,34 +51,15 @@ const projects: Project[] = [
     liveUrl: 'https://06baby.vercel.app/',
     repoUrl: '',
   },
+
   {
     id: '2',
-    title: 'Drag and Drop Todo List Kanban',
-    stack: [
-      <IoLogoReact key='nextjs' size={30} />,
-      <SiTailwindcss key='tailwindcss' size={30} />,
-      <SiTypescript key='typescript' size={30} />,
-    ],
-    description:
-      'A simple Todo List with Kanban-like drag and drop functionality',
-    features: [
-      'Todo',
-      'Drag and Drop List (React DnD)',
-      'Local Storage',
-      'RWD',
-    ],
-    imageUrl: '/08todo.jpg',
-    liveUrl: 'https://08-simple-todo-kanban.vercel.app',
-    repoUrl: 'https://github.com/Joshhong30s/08SimpleTodoKanban',
-  },
-  {
-    id: '3',
     title: 'Coffee Manager Dashboard',
     stack: [
-      <SiNextdotjs key='nextjs' size={30} />,
-      <SiTailwindcss key='tailwindcss' size={30} />,
-      <SiTypescript key='typescript' size={30} />,
-      <IoLogoReact key='react' size={30} />,
+      <SiNextdotjs title='Next.js' key='nextjs' size={30} />,
+      <SiTailwindcss title='Tailwind CSS' key='tailwindcss' size={30} />,
+      <SiTypescript title='Typescript' key='typescript' size={30} />,
+      <IoLogoReact title='React' key='react' size={30} />,
     ],
     description:
       'A dashboard for coffee managers do customer analysis in single store or multiple stores',
@@ -94,13 +75,33 @@ const projects: Project[] = [
     repoUrl: 'TBD',
   },
   {
+    id: '3',
+    title: 'Drag and Drop Todo List Kanban',
+    stack: [
+      <IoLogoReact title='React' key='nextjs' size={30} />,
+      <SiTailwindcss title='Tailwind CSS' key='tailwindcss' size={30} />,
+      <SiTypescript title='Typescript' key='typescript' size={30} />,
+    ],
+    description:
+      'A simple Todo List with Kanban-like drag and drop functionality',
+    features: [
+      'Todo',
+      'Drag and Drop List (React DnD)',
+      'Local Storage',
+      'RWD',
+    ],
+    imageUrl: '/08todo.jpg',
+    liveUrl: 'https://08-simple-todo-kanban.vercel.app',
+    repoUrl: 'https://github.com/Joshhong30s/08SimpleTodoKanban',
+  },
+  {
     id: '4',
     title: 'Personal Tech Blog',
     stack: [
-      <SiNextdotjs key='nextjs' size={30} />,
-      <SiTailwindcss key='tailwindcss' size={30} />,
-      <SiTypescript key='typescript' size={30} />,
-      <SiGooglesheets key='typescript' size={30} />,
+      <SiNextdotjs title='Next.js' key='nextjs' size={30} />,
+      <SiTailwindcss title='Tailwind CSS' key='tailwindcss' size={30} />,
+      <SiTypescript title='Typescript' key='typescript' size={30} />,
+      <SiGooglesheets title='Google Sheets' key='Google Sheets' size={30} />,
     ],
     description:
       'A personal website to showcase my projects and serve as a tech blog',
@@ -144,7 +145,7 @@ const Projects = () => {
                 />
               </Link>
             </div>
-            <h3 className='text-3xl font-semibold text-slate-900 dark:text-gray-100 mb-6 px-4 py-1 text-center rounded-md'>
+            <h3 className='text-2xl font-semibold text-slate-900 dark:text-gray-100 mb-6 px-4 py-1 text-center rounded-md'>
               {project.title}
             </h3>
             <p className='text-xl font-medium text-slate-700 dark:text-gray-300 mb-6'>

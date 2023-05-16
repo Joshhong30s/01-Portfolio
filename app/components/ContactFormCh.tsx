@@ -61,7 +61,7 @@ export default function ContactFormCh() {
         >
           <label
             htmlFor='visitor'
-            className='text-lg font-medium text-gray-600  dark:text-gray-300 mb-2'
+            className='text-lg font-semibold text-gray-600  dark:text-gray-300 mb-2'
           >
             你/妳的稱呼
           </label>
@@ -76,7 +76,7 @@ export default function ContactFormCh() {
           />
           <label
             htmlFor='email'
-            className='text-lg font-medium text-gray-600  dark:text-gray-300 mt-4 mb-2'
+            className='text-lg font-semibold text-gray-600  dark:text-gray-300 mt-4 mb-2'
           >
             你/妳的信箱
           </label>
@@ -91,7 +91,7 @@ export default function ContactFormCh() {
           />
           <label
             htmlFor='message'
-            className='text-lg font-medium text-gray-600  dark:text-gray-300 mt-4 mb-2'
+            className='text-lg font-semibold text-gray-600  dark:text-gray-300 mt-4 mb-2'
           >
             你/妳的留言
           </label>
@@ -105,11 +105,11 @@ export default function ContactFormCh() {
           ></textarea>
           <button
             type='submit'
-            className='w-full mt-6 text-lg md:text-xl font-medium rounded-lg shadow-md bg-gray-800 text-white  hover:bg-gray-600 dark:bg-gray-300 dark:text-gray-800 dark:hover:bg-white transition duration-300 py-2'
+            className='w-full mt-6 text-lg md:text-xl font-semibold rounded-lg shadow-md bg-gray-800 text-white  hover:bg-gray-600 dark:bg-gray-300 dark:text-gray-800 dark:hover:bg-white transition duration-300 py-2'
           >
             送出留言
           </button>
-          <button className='w-full mt-4 text-lg md:text-xl font-medium rounded-lg shadow-md bg-white text-gray-800  hover:bg-gray-400 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 transition duration-300 py-2'>
+          <button className='w-full mt-4 text-lg md:text-xl font-semibold rounded-lg shadow-md bg-white text-gray-800  hover:bg-gray-400 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 transition duration-300 py-2'>
             <Link href='/zh'>回到首頁</Link>
           </button>
         </form>
