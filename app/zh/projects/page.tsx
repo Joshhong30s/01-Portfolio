@@ -67,8 +67,8 @@ const projects: Project[] = [
       'RWD',
     ],
     imageUrl: '/03dashboard.png',
-    liveUrl: 'TBD',
-    repoUrl: 'TBD',
+    liveUrl: 'https://03dashboard.vercel.app/',
+    repoUrl: 'https://github.com/Joshhong30s/03dashboard',
   },
   {
     id: '3',
