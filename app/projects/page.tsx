@@ -38,13 +38,11 @@ const projects: Project[] = [
     description:
       'A website I made for my newborn son, updated daily with photos and growth data',
     features: [
-      'Photo/Video Album (Mongodb)',
-      'User photo uploads (Imgur API)',
-      'Favorites access',
-      'Growth Dashboard (React-echart)',
-      'Growth Data (React-table)',
-      'Dynamic Guestbook (Google API)',
-      'Login & Logout (Mongodb)',
+      'Photo gallery & image slides',
+      'Login and Registration',
+      'Upload photos with Imgur API',
+      'Dynamic dashboard & message board',
+      'Growth Data',
       'RWD',
     ],
     imageUrl: '/06baby.png',
@@ -64,10 +62,10 @@ const projects: Project[] = [
     description:
       'A dashboard for coffee managers do customer analysis in single store or multiple stores',
     features: [
-      'Dashboard (React-rechart)',
-      'Table (react-table)',
-      'User management',
-      'Weather API integration',
+      'Single store dashboard',
+      'Two stores comparison dashboard',
+      'Product contribution analysis dashboard',
+      'Menu with top 3 best-selling items',
       'RWD',
     ],
     imageUrl: '/03dashboard.png',
@@ -106,11 +104,11 @@ const projects: Project[] = [
     description:
       'A personal website to showcase my projects and serve as a tech blog',
     features: [
+      'Light & Dark Mode',
+      'English / Chinese language switch',
       'Markdown blog',
-      'Contact Form (Google Sheet API)',
-      'Project showcase',
-      'Dark mode toggle',
-      'English/Chinese language switch',
+      'Project gallery   ',
+      'Contact form',
       'RWD',
     ],
     imageUrl: '/01portfolio.png',
@@ -148,12 +146,12 @@ const Projects = () => {
             <h3 className='text-2xl font-semibold text-slate-900 dark:text-gray-100 mb-6 px-4 py-1 text-center rounded-md'>
               {project.title}
             </h3>
-            <p className='text-xl font-medium text-slate-700 dark:text-gray-300 mb-6'>
+            <p className='text-lg font-medium text-slate-700 dark:text-gray-300 mb-6'>
               {project.description}
             </p>
 
             {/* Render features as an unordered list */}
-            <ul className='list-none pl-0 text-xl font-medium text-slate-800 dark:text-gray-100 mb-6 flex-grow space-y-2'>
+            <ul className='list-none pl-0 text-lg font-medium text-slate-800 dark:text-gray-100 mb-6 flex-grow space-y-2'>
               {project.features.map((feature, index) => (
                 <li key={index} className='mb-2 pl-4'>
                   <span className='inline-block w-2 h-2 bg-slate-800 dark:bg-gray-100 mr-3 rounded-full'></span>

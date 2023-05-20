@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 const HeroSectionCh = () => {
   return (
@@ -16,12 +17,16 @@ const HeroSectionCh = () => {
           </span>
         </p>
         <div className='flex gap-4'>
-          <button className='p-4 w-auto rounded-full text-center bg-slate-800 text-white hover:bg-slate-600 focus:ring-2 focus:ring-offset-2 focus:ring-slate-700 dark:bg-gray-100 dark:text-slate-800 dark:hover:bg-gray-300 font-semibold transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110'>
-            下載履歷表
-          </button>
-          <button className='p-4 w-auto rounded-full text-center bg-gray-200 text-slate-800 hover:bg-gray-300 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600 font-semibold transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110'>
-            查看專案
-          </button>
+          <Link href='https://www.cakeresume.com/pdf/s--Y9Fk5GPdmUdVO64RoBjgYA--/JzpYP.pdf'>
+            <button className='p-4 w-auto rounded-full text-center bg-slate-800 text-white hover:bg-slate-600 focus:ring-2 focus:ring-offset-2 focus:ring-slate-700 dark:bg-gray-100 dark:text-slate-800 dark:hover:bg-gray-300 font-semibold transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110'>
+              下載履歷表
+            </button>
+          </Link>
+          <Link href='/zh/projects'>
+            <button className='p-4 w-auto rounded-full text-center bg-gray-200 text-slate-800 hover:bg-gray-300 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600 font-semibold transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110'>
+              查看專案
+            </button>
+          </Link>
         </div>
       </section>
     </>

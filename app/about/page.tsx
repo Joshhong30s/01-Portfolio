@@ -43,11 +43,11 @@ const About = () => {
               <br />
               <p className='text-xl font-normal text-gray-600  dark:text-gray-300'>
                 Before becoming an engineer, I accumulated over 10 years of B2B
-                Sales experience. I have served multinational corporations and
-                well-known startups, providing services to industries at home
-                and abroad through SaaS software and customized project
-                services. My long-term service in the software industry sowed
-                the seeds of becoming an engineer.
+                Sales experience, working in multinational corporations and
+                well-known startups, primarily promoting SaaS software and
+                customized project services. I believe that the problem-solving
+                skills and communication techniques I developed in the past can
+                enhance my qualities as a developer.
               </p>
               <br />
               <p className='text-xl font-normal text-gray-600  dark:text-gray-300'>

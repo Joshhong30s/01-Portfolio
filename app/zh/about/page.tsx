@@ -40,7 +40,8 @@ const About = () => {
               <br />
               <p className='text-xl font-medium text-gray-600  dark:text-gray-300'>
                 在成為工程師之前，我累積了10年以上的B2B
-                Sales經驗，曾在跨國企業與知名新創服務，透過SaaS軟體和客製化專案服務國內外產業，也因為長期在軟體產業服務埋下了我成為工程師的種子。
+                Sales經驗，曾在跨國企業與知名新創服務，主要推廣SaaS軟體和客製化專案服務。
+                我相信過往養成的問題解決能力和溝通技巧能夠提升我身為開發者的品質。
               </p>
               <br />
               <p className='text-xl font-medium text-gray-600 dark:text-gray-300'>
