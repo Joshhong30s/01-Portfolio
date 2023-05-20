@@ -46,7 +46,7 @@ const projects: Project[] = [
     ],
     imageUrl: '/06baby.png',
     liveUrl: 'https://06baby.vercel.app/',
-    repoUrl: '',
+    repoUrl: 'https://github.com/Joshhong30s/06baby',
   },
   {
     id: '2',
