@@ -4,13 +4,6 @@ import { ServerThemeProvider, ThemeProvider } from 'next-themes'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import type { Metadata } from 'next'
-
-// export const metadata = {
-//   title: 'Josh&apos;s dev blog',
-//   description: 'Created by Josh Hong. All rights reserved',
-// }
-
-/// fonts to use
 import { Karla } from '@next/font/google'
 import { Roboto } from '@next/font/google'
 import { Montserrat } from '@next/font/google'

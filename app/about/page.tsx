@@ -44,10 +44,9 @@ const About = () => {
               <p className='text-xl font-normal text-gray-600  dark:text-gray-300'>
                 Before becoming an engineer, I accumulated over 10 years of B2B
                 Sales experience, working in multinational corporations and
-                well-known startups, primarily promoting SaaS software and
-                customized project services. I believe that the problem-solving
-                skills and communication techniques I developed in the past can
-                enhance my qualities as a developer.
+                well-known startups. I believe that the problem-solving skills
+                and communication techniques I developed in the past can enhance
+                my qualities as a developer.
               </p>
               <br />
               <p className='text-xl font-normal text-gray-600  dark:text-gray-300'>

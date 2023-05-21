@@ -25,7 +25,7 @@ export default function Footer() {
         </div>
         <div className='flex flex-row items-center justify-center space-x-4 my-1'>
           <a
-            href='https://github.com/Joshhong30s?tab=repositories'
+            href='https://github.com/Joshhong30s'
             rel='noreferrer'
             target='_blank'
           >

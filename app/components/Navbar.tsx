@@ -1,6 +1,7 @@
 'use client'
+
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import { RiEnglishInput, RiMoonFill, RiSunLine } from 'react-icons/ri'
 import { IoMdMenu, IoMdClose } from 'react-icons/io'
@@ -51,17 +52,25 @@ const NavItemsCh: Array<NavItem> = [
 ]
 
 function Navbar() {
-  const { systemTheme, theme, setTheme } = useTheme()
-  const currentTheme = theme === 'system' ? systemTheme : theme
+  const { resolvedTheme, setTheme, theme } = useTheme()
+
   const [navbar, setNavbar] = useState(false)
   const router = useRouter()
   const pathname = usePathname()
+  const [isThemeLoaded, setThemeLoaded] = useState(false)
+  useEffect(() => {
+    setThemeLoaded(true)
+  }, [theme])
 
   let navItems: Array<NavItem>
   if (pathname.includes('/zh')) {
     navItems = NavItemsCh
   } else {
     navItems = NavItems
+  }
+
+  if (!isThemeLoaded) {
+    return null // or return a loading spinner
   }
 
   return (
@@ -93,7 +102,7 @@ function Navbar() {
           </div>
         </div>
 
-        {/* navbar only for md and above */}
+        {/* navbar only for md and larger */}
         <div
           className={`pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
             navbar ? 'block' : 'hidden'
@@ -116,7 +125,7 @@ function Navbar() {
               )
             })}
             <div className='flex justify-end space-x-4'>
-              {currentTheme === 'dark' ? (
+              {resolvedTheme === 'dark' ? (
                 <>
                   <button
                     onClick={() => setTheme('light')}

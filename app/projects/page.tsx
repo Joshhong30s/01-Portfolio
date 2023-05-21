@@ -150,7 +150,7 @@ const Projects = () => {
               {project.description}
             </p>
 
-            {/* Render features as an unordered list */}
+            {/* Render features as uls */}
             <ul className='list-none pl-0 text-lg font-medium text-slate-800 dark:text-gray-100 mb-6 flex-grow space-y-2'>
               {project.features.map((feature, index) => (
                 <li key={index} className='mb-2 pl-4'>
