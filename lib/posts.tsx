@@ -7,22 +7,20 @@ import html from 'remark-html'
 // Joining the current working directory with the blogposts directory.
 const postsDirectory = path.join(process.cwd(), 'blogposts')
 
+//  retrieves and sorts all the blog post metadata.
 export function getSortedPostsData() {
-  // reads the contents of a directory and returns an array of filenames in the directory
-  const fileNames = fs.readdirSync(postsDirectory)
+  const fileNames = fs.readdirSync(postsDirectory) // reads the contents of the postsDirectory and returns an array of filenames in the directory.
 
   const allPostsData = fileNames.map((fileName) => {
-    //remove ".md" from file name to get id (regular expression)
-    const id = fileName.replace(/\.md$/, '')
+    const id = fileName.replace(/\.md$/, '') //remove ".md" from file name to get id (regular expression)
 
     //read markdown file as string
     const fullPath = path.join(postsDirectory, fileName)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
 
-    //use gray-matter to parse the post metadata section
-    const matterResult = matter(fileContents)
+    const matterResult = matter(fileContents) //use gray-matter to parse the post metadata section
 
-    // Creating a new object with the properties id, title, and date. */
+    // creating a new object with the properties id, title, and date as metadata
     const blogPost: BlogPost = {
       id,
       title: matterResult.data.title,
@@ -30,22 +28,24 @@ export function getSortedPostsData() {
     }
     return blogPost
   })
-  return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1))
+
+  return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1)) // compares pairs of elements (a and b) based on date property to decide its order in the sorted array
 }
 
+// retrieves the content of each blog post by ID and converts it to HTML
 export async function getPostData(id: string) {
   const fullPath = path.join(postsDirectory, `${id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
 
-  //use gray-matter to parse the post metadata
-  const matterResult = matter(fileContents)
+  const matterResult = matter(fileContents) //use gray-matter to parse the post metadata
 
-  const processedContent = await remark()
+  const processedContent = await remark() // Converting Markdown to HTML
     .use(html)
     .process(matterResult.content)
 
-  const contentHtml = processedContent.toString()
-  // Creating a new object with the properties id, title, and date. */
+  const contentHtml = processedContent.toString() // holds the final HTML content as a string
+
+  // create blogPost HTML data by combining blogPost and contentHtml
   const blogPostWithHTML: BlogPost & { contentHtml: string } = {
     id,
     title: matterResult.data.title,
@@ -53,6 +53,5 @@ export async function getPostData(id: string) {
     contentHtml,
   }
 
-  // combine the data with id
   return blogPostWithHTML
 }
