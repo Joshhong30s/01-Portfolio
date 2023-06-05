@@ -50,7 +50,11 @@ export default function RootLayout({
         <meta charSet='utf-8' />
         <link rel='icon' href='/logo1.png' />
       </Head>
-      <Script strategy='afterInteractive'>
+      <Script
+        async
+        src='https://www.googletagmanager.com/gtag/js?id=G-7EJ6PKSZ6R'
+      ></Script>
+      <Script>
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
